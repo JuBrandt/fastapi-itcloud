@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
+    
+    
+
+    
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">    
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/classy-nav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='/scss/_fonts.scss') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='/scss/_mixin.scss') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='/scss/_responsive.scss') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='/scss/_theme_color.scss') }}">
+    <link rel="stylesheet" href="{{ url_for('static', path='/scss/style.scss') }}">
+
+</head>
+
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="nikki-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container-fluid">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="nikkiNav">
+
+                        <!-- Nav brand -->
+                        <a href="{{ ('/') }}" class="nav-brand"><img src="{{ url_for('static', path='/img/core-img/logo.png') }}" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="{{ ('/') }}">Главная</a></li>
+                                    <li><a href="#">Услуги</a>
+                                        <ul class="dropdown">
+                                            <li><a href="{{ ('/') }}">Главная</a></li>
+                                            <li><a href="{{ ('blog') }}">Блог</a></li>
+                                            <li><a href="{{ ('post') }}">Магазин ПО</a></li>
+                                            <li><a href="//edu.it-clouds.ru">Онлайн обучение</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Каталог</a>
+                                        <div class="megamenu">
+                                            <ul class="single-mega cn-col-4">
+                                                <li><a href="{{ ('1c-otchetnost') }}">- 1С: Отчетность</a></li>
+                                                <li><a href="{{ ('1c-itc') }}">- 1С: ИТС</a></li>
+                                                <li><a href="{{ ('1s-fresh-upravlenie-nashey-firmoy') }}">- 1С: Фреш УНФ</a></li>
+                                                <li><a href="#">- 1С: Бухгалтерия</a></li>
+                                                <li><a href="#">- 1С: Садовод</a></li>
+                                                <li><a href="#">- 1С: Документооборот</a></li>
+                                                <li><a href="#">- 1С: CRM</a></li>
+                                            </ul>
+                                            <ul class="single-mega cn-col-4">
+                                                <li><a href="//edu.it-clouds.ru/courses/upravlenie-proektami/">- 1с Курсы:Упр.проектами</a></li>
+                                                <li><a href="//edu.it-clouds.ru/courses/1s-upravlenie-holdingom/">- 1С Курсы: Упр.холдингами</a></li>
+                                                <li><a href="//edu.it-clouds.ru/courses/kompleksnaya-avtomatizatsiya/">- 1С Курсы: Комп.автоматизация</a></li>
+                                                <li><a href="//edu.it-clouds.ru/courses/programmirovanie-v-1s/">- 1С Курсы: Программирование</a></li>
+                                                <li><a href="//edu.it-clouds.ru/courses/1s-zarplata-8/">- 1С Курсы: ЗУП</a></li>
+                                                <li><a href="//edu.it-clouds.ru/courses/torgovlya-i-roznitsa/">- 1С Курсы: Торговля и розница</a></li>
+                                                <li><a href="//edu.it-clouds.ru/courses/1s-erp/">- 1С Курсы: 1C: ERP</a></li>
+                                            </ul>
+                                            <ul class="single-mega cn-col-4">
+                                                <li><a href="//edu.it-clouds.ru/courses/1s-dokumentooborot/">- 1С Курсы: Документооборот</a></li>
+                                                <li><a href="#">- Food</a></li>
+                                                <li><a href="#">- Travel</a></li>
+                                                <li><a href="#">- Recipe</a></li>
+                                                <li><a href="#">- Bread</a></li>
+                                                <li><a href="#">- Breakfast</a></li>
+                                                <li><a href="#">- Meat</a></li>
+                                            </ul>
+                                            <ul class="single-mega cn-col-4">
+                                                <li><a href="#">- Features</a></li>
+                                                <li><a href="#">- Food</a></li>
+                                                <li><a href="#">- Travel</a></li>
+                                                <li><a href="#">- Recipe</a></li>
+                                                <li><a href="#">- Bread</a></li>
+                                                <li><a href="#">- Breakfast</a></li>
+                                                <li><a href="#">- Meat</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="{{ ('about_us') }}">О нас</a></li>
+                                    <li><a href="{{ ('contact') }}">Контакты</a></li>
+                                </ul>
+
+                                <!-- Search Form -->
+                                <div class="search-form">
+                                    <form action="#" method="get">
+                                        <input type="search" name="search" class="form-control" placeholder="Поиск">
+                                        <button type="submit"><i class="fa fa-search"></i></button>
+                                    </form>
+                                </div>
+
+                                <!-- Social Button -->
+                                <div class="top-social-info">
+                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="RSS Feed"><i class="fa fa-rss" aria-hidden="true"></i></a>
+                                </div>
+
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="{{ url_for('static', path='js/jquery/jquery-2.2.4.min.js') }}"></script>
+    <!-- Popper js -->
+    <script src="{{ url_for('static', path='js/bootstrap/popper.min.js') }}"></script>
+    <!-- Bootstrap js -->
+    <script src="{{ url_for('static', path='js/bootstrap/bootstrap.min.js') }}"></script>
+    <!-- All Plugins js -->
+    <script src="{{ url_for('static', path='js/plugins/plugins.js') }}"></script>
+    <!-- Active js -->
+    <script src="{{ url_for('static', path='js/active.js') }}"></script>
+
+
+</html>
